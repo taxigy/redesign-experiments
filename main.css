@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #3e3e3e;
+  background-color: #fefefe;
+  font-family: "Georgia", serif;
+  font-size: 19px;
+  line-height: 30.4px;
+  z-index: 10; }
+  body ul {
+    list-style-type: none;
+    width: auto;
+    margin: 0;
+    padding: 0; }
+    body ul > li {
+      color: #979797;
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 13.3px;
+      line-height: 21.28px; }
+  body div {
+    display: block;
+    margin: 0 auto;
+    font-family: "Georgia", serif;
+    font-size: 17.1px;
+    line-height: 27.36px; }
+    body div h2 {
+      text-align: center;
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 13.3px; }
+    body div h3 {
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 19px;
+      font-weight: 300; }
+      body div h3 > small {
+        color: #979797;
+        font-size: 13.49px; }
+    body div.banner {
+      display: none;
+      height: 50px;
+      width: 320px;
+      margin: 34.2px auto;
+      color: #7f7f7f;
+      background-color: #7f7f7f; }
+    body div.social-buttons > ul {
+      display: table;
+      width: auto;
+      margin: 0 auto; }
+      body div.social-buttons > ul > li {
+        display: inline-block;
+        padding: 0 20px; }
+    body div.extra-links > ul {
+      overflow-x: auto;
+      white-space: nowrap; }
+      body div.extra-links > ul > li {
+        display: inline-block;
+        width: 33.3%; }
+        @media screen and (min-width: 768px) {
+          body div.extra-links > ul > li {
+            width: 25%; } }
+        @media screen and (min-width: 992px) {
+          body div.extra-links > ul > li {
+            width: 20%; } }
+        body div.extra-links > ul > li img {
+          width: 100%;
+          vertical-align: top; }
+    body div.comments {
+      padding: 0 20px;
+      max-width: 768px; }
+      body div.comments > ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0; }
+        body div.comments > ol > li {
+          display: block;
+          width: auto;
+          margin: 17.1px 0;
+          padding: 0 0 8.55px;
+          border-bottom: 1px solid #f1f1f1; }
+          body div.comments > ol > li > p:last-child {
+            text-align: right;
+            font-family: "Helvetica Neue", sans-serif;
+            font-size: 13.3px;
+            line-height: 21.28px; }
+      body div.comments > form {
+        display: block;
+        padding: 10px 20px 5px;
+        background-color: #e5e5e5;
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: 15.219px; }
+        body div.comments > form > label {
+          display: block;
+          padding: 10px 0 0; }
+        body div.comments > form > textarea {
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          resize: vertical; }
+        body div.comments > form > select {
+          display: block;
+          width: 100%; }
+        body div.comments > form > .form-group {
+          padding: 10px 0 0;
+          text-align: right; }
+        body div.comments > form button {
+          font-family: "Helvetica Neue", sans-serif;
+          display: inline-block; }
+    body div.nav-posts {
+      width: 100%;
+      column-gap: 0px;
+      margin: 60px 0 20px;
+      padding: 0 20px; }
+      body div.nav-posts > ul {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3; }
+        body div.nav-posts > ul > li {
+          width: 100%;
+          text-align: center; }
+    body div.instagram-photos {
+      overflow-x: auto;
+      width: 100%;
+      margin: 34.2px 0;
+      padding: 17.1px 0;
+      box-sizing: content-box; }
+      body div.instagram-photos > ul {
+        white-space: nowrap; }
+        body div.instagram-photos > ul > li {
+          display: inline-block;
+          width: 50%; }
+          @media screen and (min-width: 768px) {
+            body div.instagram-photos > ul > li {
+              width: 25%; } }
+          @media screen and (min-width: 992px) {
+            body div.instagram-photos > ul > li {
+              width: 20%;
+              float: left; } }
+          body div.instagram-photos > ul > li img {
+            width: 100%;
+            vertical-align: top; }
+    body div.end {
+      display: block;
+      width: auto;
+      color: #c1c1c1;
+      background-color: #010101;
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 10.64px;
+      text-align: center; }
+      body div.end > a {
+        color: #979797;
+        text-decoration: none; }
+  body > nav {
+    display: block;
+    color: #cacaca;
+    background-color: #010101;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 15.2px;
+    line-height: 24.32px; }
+    body > nav > ul > li {
+      display: inline;
+      margin: 0;
+      padding: 0 5px; }
+      body > nav > ul > li:first-child {
+        margin-left: 0; }
+      body > nav > ul > li:last-child {
+        margin-right: 0; }
+  body > h1 {
+    display: block;
+    width: auto;
+    margin: 17.1px auto;
+    text-align: center;
+    color: #979797;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 45.6px;
+    line-height: 36.48px;
+    font-weight: 900;
+    letter-spacing: -1.9px; }
+  body > p.lead {
+    display: block;
+    width: auto;
+    margin: 0 auto 17.1px;
+    padding: 0 40px;
+    color: #979797;
+    text-align: center;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    line-height: 21.28px;
+    letter-spacing: 0.95px; }
+  body > article {
+    display: block;
+    width: auto;
+    max-width: 992px;
+    margin: 34.2px auto 8.55px;
+    padding: 0 0 34.2px;
+    border-bottom: 1px solid #979797;
+    color: #3e3e3e;
+    font-family: "Georgia", serif;
+    font-size: 19px;
+    font-weight: 300; }
+    body > article > header {
+      padding: 0 20px; }
+      body > article > header > h2 {
+        display: inline;
+        padding-right: 5px;
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: 36.5256px;
+        font-weight: 900;
+        line-height: 36.48px; }
+      body > article > header p.time {
+        display: inline;
+        color: #979797;
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: 25.56792px;
+        line-height: 36.48px; }
+    body > article > section {
+      padding: 0 20px;
+      font-size: 19px;
+      clear: both; }
+      @media screen and (min-width: 992px) {
+        body > article > section {
+          font-size: 22.8px;
+          line-height: 36.48px; } }
+      body > article > section > h2 {
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: 31.92px;
+        font-weight: 630;
+        line-height: 36.48px; }
+        @media screen and (min-width: 992px) {
+          body > article > section > h2 {
+            font-size: 45.6px;
+            line-height: 45.6px; } }
+      body > article > section > p.lead {
+        color: #979797;
+        font-size: 20.9px;
+        font-weight: 150;
+        line-height: 27.36px;
+        font-style: italic; }
+    body > article > figure {
+      width: 100%;
+      column-gap: 0px;
+      margin: 17.1px auto;
+      padding: 0; }
+      body > article > figure.single {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1; }
+      body > article > figure.multi {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3; }
+      body > article > figure img {
+        display: block;
+        width: 100%; }
+  body > footer {
+    padding: 34.2px 0 0;
+    background-color: #f1f1f1; }
+    body > footer img {
+      margin: 0 auto; }
