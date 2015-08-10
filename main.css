@@ -13,6 +13,16 @@ body {
     width: auto;
     margin: 0;
     padding: 0; }
+    body ul.categories {
+      margin: 0 0 17.1px 0;
+      font-style: italic;
+      text-transform: uppercase; }
+      @media screen and (min-width: 768px) {
+        body ul.categories {
+          margin: 0 0 34.2px 0; } }
+      @media screen and (min-width: 992px) {
+        body ul.categories {
+          margin: 0 0 51.3px 0; } }
     body ul > li {
       color: #979797;
       font-family: "Helvetica Neue", sans-serif;
@@ -175,6 +185,13 @@ body {
     line-height: 36.48px;
     font-weight: 900;
     letter-spacing: -1.9px; }
+    @media screen and (min-width: 1200px) {
+      body > h1 {
+        display: block;
+        text-align: right;
+        margin: 17.1px 17.1px 0 0;
+        padding: 17.1px;
+        vertical-align: baseline; } }
   body > p.lead {
     display: block;
     width: auto;
@@ -183,9 +200,18 @@ body {
     color: #979797;
     text-align: center;
     font-family: "Helvetica Neue", sans-serif;
+    font-size: 18.62px;
     font-weight: 100;
     line-height: 21.28px;
     letter-spacing: 0.95px; }
+    @media screen and (min-width: 1200px) {
+      body > p.lead {
+        display: inline-block;
+        float: right;
+        margin: 0 17.1px 0 0;
+        padding: 0 17.1px 0 0;
+        vertical-align: baseline;
+        font-size: 15.96px; } }
   body > article {
     display: block;
     width: auto;
@@ -196,25 +222,44 @@ body {
     color: #3e3e3e;
     font-family: "Georgia", serif;
     font-size: 19px;
-    font-weight: 300; }
+    font-weight: 300;
+    position: relative; }
     body > article > header {
-      padding: 0 20px; }
+      padding: 0 20px;
+      position: relative; }
+      @media screen and (min-width: 992px) {
+        body > article > header {
+          position: relative;
+          width: 100%;
+          transform: translateY(-109.44px);
+          z-index: 1;
+          background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 25%, white 100%); } }
       body > article > header > h2 {
-        display: inline;
+        display: inline-block;
         padding-right: 5px;
         font-family: "Helvetica Neue", sans-serif;
         font-size: 36.5256px;
         font-weight: 900;
         line-height: 36.48px; }
+        @media screen and (min-width: 992px) {
+          body > article > header > h2 {
+            font-size: 91.2px;
+            line-height: 72.96px; } }
       body > article > header p.time {
-        display: inline;
+        display: inline-block;
         color: #979797;
         font-family: "Helvetica Neue", sans-serif;
         font-size: 25.56792px;
         line-height: 36.48px; }
+        @media screen and (min-width: 992px) {
+          body > article > header p.time {
+            font-size: 25.56792px;
+            line-height: 62.016px;
+            vertical-align: text-bottom; } }
     body > article > section {
       padding: 0 20px;
       font-size: 19px;
+      position: relative;
       clear: both; }
       @media screen and (min-width: 992px) {
         body > article > section {
@@ -236,10 +281,15 @@ body {
         line-height: 27.36px;
         font-style: italic; }
     body > article > figure {
+      position: relative;
       width: 100%;
-      column-gap: 0px;
       margin: 17.1px auto;
-      padding: 0; }
+      padding: 0;
+      z-index: 1;
+      overflow: hidden; }
+      @media screen and (min-width: 768px) {
+        body > article > figure {
+          max-height: 427.5px; } }
       body > article > figure.single {
         -webkit-column-count: 1;
         -moz-column-count: 1;
@@ -248,9 +298,11 @@ body {
         -webkit-column-count: 3;
         -moz-column-count: 3;
         column-count: 3; }
-      body > article > figure img {
-        display: block;
+      body > article > figure > img {
         width: 100%; }
+        @media screen and (min-width: 768px) {
+          body > article > figure > img {
+            transform: translateY(-33%); } }
   body > footer {
     padding: 34.2px 0 0;
     background-color: #f1f1f1; }

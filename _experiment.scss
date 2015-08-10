@@ -56,6 +56,20 @@ body {
         margin: 0;
         padding: 0;
 
+        &.categories {
+            margin: 0 0 $spacing-unit 0;
+            font-style: italic;
+            text-transform: uppercase;
+
+            @include mq($sm) {
+                margin: 0 0 $spacing-unit * 2 0;
+            }
+
+            @include mq($md) {
+                margin: 0 0 $spacing-unit * 3 0;
+            }
+        }
+
         > li {
             color: $text-color-light;
             font-family: $alter-font;
@@ -290,6 +304,11 @@ body {
                 }
             }
         }
+
+        // @include mq($lg) {
+        //     display: inline-block;
+        //     vertical-align: baseline;
+        // }
     }
 
     > h1 {
@@ -303,6 +322,14 @@ body {
         line-height: $header-line-heigth;
         font-weight: $header-font-weight;
         letter-spacing: -($base-font-size * 0.1);
+
+        @include mq($lg) {
+            display: block;
+            text-align: right;
+            margin: $spacing-unit $spacing-unit 0 0;
+            padding: $spacing-unit;
+            vertical-align: baseline;
+        }
     }
 
     > p {
@@ -314,9 +341,19 @@ body {
             color: $text-color-light;
             text-align: center;
             font-family: $alter-font;
+            font-size: $alter-font-size * 1.4;
             font-weight: $alter-font-weight;
             line-height: $alter-line-height;
             letter-spacing: $base-font-size * 0.05;
+
+            @include mq($lg) {
+                display: inline-block;
+                float: right;
+                margin: 0 $spacing-unit 0 0;
+                padding: 0 $spacing-unit 0 0;
+                vertical-align: baseline;
+                font-size: $alter-font-size * 1.2;
+            }
         }
     }
 
@@ -331,31 +368,56 @@ body {
         font-family: $base-font-family;
         font-size: $base-font-size;
         font-weight: $base-font-weight;
+        position: relative;
 
         > header {
             padding: 0 $side-padding;
+            position: relative;
+
+            @include mq($md) {
+                position: relative;
+                width: 100%;
+                transform: translateY(-$header-line-heigth * 3);
+                z-index: 1;
+                background: linear-gradient(
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 0.5) 25%,
+                    rgba(255, 255, 255, 1) 100%);
+            }
 
             > h2 {
-                display: inline;
+                display: inline-block;
                 padding-right: $side-padding * 0.25;
                 font-family: $header-font;
                 font-size: $header-font-size * 0.801;
                 font-weight: $header-font-weight;
                 line-height: $header-line-heigth;
+
+                @include mq($md) {
+                    font-size: $header-font-size * 2;
+                    line-height: $header-line-heigth * 2;
+                }
             }
 
             p.time {
-                display: inline;
+                display: inline-block;
                 color: $text-color-light;
                 font-family: $header-font;
                 font-size: $header-font-size * 0.801 * 0.7;
                 line-height: $header-line-heigth;
+
+                @include mq($md) {
+                    font-size: $header-font-size * 0.801 * 0.7;
+                    line-height: $header-line-heigth * 1.7;
+                    vertical-align: text-bottom;
+                }
             }
         }
 
         > section {
             padding: 0 $side-padding;
             font-size: $base-font-size;
+            position: relative;
             clear: both;
 
             @include mq($md) {
@@ -387,18 +449,25 @@ body {
         }
 
         > figure {
+            position: relative;
             width: 100%;
-            column-gap: 0px;
+            // column-gap: 0px;
             margin: $spacing-unit auto;
             padding: 0;
+            z-index: 1;
+            overflow: hidden;
+
+            @include mq($sm) {
+                max-height: $spacing-unit * 25;
+            }
+
+            &.heading {
+            }
 
             &.single {
                 -webkit-column-count: 1;
                 -moz-column-count: 1;
                 column-count: 1;
-            }
-
-            &.heading {
             }
 
             &.multi {
@@ -407,9 +476,12 @@ body {
                 column-count: 3;
             }
 
-            img {
-                display: block;
+            > img {
                 width: 100%;
+
+                @include mq($sm) {
+                    transform: translateY(-33%);
+                }
             }
         }
     }
