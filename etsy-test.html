@@ -15,13 +15,96 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/fonts/fontawesome-webfont.woff2">
     </head>
     <body>
-        <nav>
-            <ul class="site-navigation col-md-12">
-                <li>Home</li>
-                <li>Wishlist</li>
-                <li>Categories</li>
-                <li>Archive</li>
-            </ul>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Wishlist</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Categories <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="">Beautu</a>
+                                </li>
+                                <li>
+                                    <a href="">Etc.</a>
+                                </li>
+                                <li>
+                                    <a href="">OOTD</a>
+                                </li>
+                                <li>
+                                    <a href="">Out and About</a>
+                                </li>
+                                <li>
+                                    <a href="">Travel</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Archive <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="">August</a>
+                                </li>
+                                <li>
+                                    <a href="">July</a>
+                                </li>
+                                <li>
+                                    <a href="">June</a>
+                                </li>
+                                <li>
+                                    <a href="">May</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-pinterest-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-youtube-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
         </nav>
         <h1 id="beginning">buynow/bloglater</h1>
         <p class="lead">a blog about shopping and little else.</p>
@@ -82,13 +165,13 @@
             </section>
             <figure>
                 <div class="col-xs-4">
-                    <img src="http://images.rewardstyle.com/img?v=2.13&p=e476d4fe06b96d08dea72a47d2bc1339" alt="" />
+                    <img src="http://images.rewardstyle.com/img?v=2.13&p=e476d4fe06b96d08dea72a47d2bc1339" class="img-responsive" alt="" />
                 </div>
                 <div class="col-xs-4">
-                    <img src="http://images.rewardstyle.com/img?v=2.13&p=2d7a353cf92b67e434ff1d1a0d24909c" alt="" />
+                    <img src="http://images.rewardstyle.com/img?v=2.13&p=2d7a353cf92b67e434ff1d1a0d24909c" class="img-responsive" alt="" />
                 </div>
                 <div class="col-xs-4">
-                    <img src="http://images.rewardstyle.com/img?v=2.13&p=2592ae3d7e0f48045508fd009fdbfc9e" alt="" />
+                    <img src="http://images.rewardstyle.com/img?v=2.13&p=2592ae3d7e0f48045508fd009fdbfc9e" class="img-responsive" alt="" />
                 </div>
             </figure>
             <section></section>
@@ -199,7 +282,42 @@
                 </li>
             </ul>
         </div>
+        <footer class="container-fluid">
+            <div class="col-xs-4 col-sm-2">
+                <img class="img-responsive" src="http://4.bp.blogspot.com/-Dcb5ZJl90tU/U7cGB5S_apI/AAAAAAAAGVw/d589GZePt-A/s80/*" alt="" />
+            </div>
+            <div class="col-xs-8 col-sm-4">
+                <p>Laura</p>
+                <p>I live in Dubai. I write a blog about shopping. That's about as deep as it gets.</p>
+                <p>
+                    <a href="https://www.blogger.com/profile/01372600155799892981">View my complete profile</a>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="">Search</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" />
+                        <div class="input-group-addon btn">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="form-group">
+                    <label for="">Follow by email</label>
+                    <div class="input-group">
+                        <input type="email" class="form-control" />
+                        <div class="input-group-addon btn">
+                            <i class="fa fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <div class="instagram-photos">
+            <h2>Instagram</h2>
             <ul>
                 <li>
                     <a href="https://instagram.com/p/6FWrfvGkYz/" target="_blank">
@@ -263,41 +381,9 @@
                 </li>
             </ul>
         </div>
-        <footer class="container-fluid">
-            <div class="col-xs-4 col-sm-2">
-                <img class="img-responsive" src="http://4.bp.blogspot.com/-Dcb5ZJl90tU/U7cGB5S_apI/AAAAAAAAGVw/d589GZePt-A/s80/*" alt="" />
-            </div>
-            <div class="col-xs-8 col-sm-4">
-                <p>Laura</p>
-                <p>I live in Dubai. I write a blog about shopping. That's about as deep as it gets.</p>
-                <p>
-                    <a href="https://www.blogger.com/profile/01372600155799892981">View my complete profile</a>
-                </p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="form-group">
-                    <label for="">Search</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" />
-                        <div class="input-group-addon btn">
-                            <i class="fa fa-search"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="form-group">
-                    <label for="">Follow by email</label>
-                    <div class="input-group">
-                        <input type="email" class="form-control" />
-                        <div class="input-group-addon btn">
-                            <i class="fa fa-check"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
         <div class="end">design by <a href="https://www.etsy.com/shop/TheBasicPage">the basic page</a></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script>
             // to skip navigation above the starting point, because it's rarely relevant
             document.getElementById('beginning').scrollIntoView();

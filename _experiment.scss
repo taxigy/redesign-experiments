@@ -8,7 +8,6 @@
 
 // Variables
 $side-padding: 20px;
-$spacing-unit: $base-font-size / 10 * 9;
 
 $text-color: #3e3e3e;
 $text-color-light: lighten($text-color, 35%);
@@ -33,6 +32,8 @@ $alter-font: "Helvetica Neue", sans-serif;
 $alter-font-size: $base-font-size * 0.7;
 $alter-line-height: $base-line-height * 0.7;
 $alter-font-weight: 100;
+
+$spacing-unit: $base-font-size / 10 * 9;
 
 $sm: 768px;
 $md: 992px;
@@ -281,17 +282,16 @@ body {
     }
 
     // Site nav on the top
-    > nav {
+    .navbar {
         display: block;
         color: lighten($text-color-light, 20%);
-        background-color: invert($background-color);
+        background-color: rgba(darken($background-color, 10%), 0.75);
         font-family: $nav-font;
         font-size: $nav-font-size;
         line-height: $nav-line-height;
 
-        > ul {
+        ul {
             > li {
-                display: inline;
                 margin: 0;
                 padding: 0 $nav-item-padding;
 
@@ -304,17 +304,12 @@ body {
                 }
             }
         }
-
-        // @include mq($lg) {
-        //     display: inline-block;
-        //     vertical-align: baseline;
-        // }
     }
 
     > h1 {
         display: block;
         width: auto;
-        margin: $spacing-unit auto;
+        margin: $spacing-unit * 4 auto $spacing-unit;
         text-align: center;
         color: $text-color-light;
         font-family: $header-font;
@@ -325,8 +320,7 @@ body {
 
         @include mq($lg) {
             display: block;
-            text-align: right;
-            margin: $spacing-unit $spacing-unit 0 0;
+            margin: $spacing-unit * 4 $spacing-unit 0 0;
             padding: $spacing-unit;
             vertical-align: baseline;
         }
@@ -347,8 +341,6 @@ body {
             letter-spacing: $base-font-size * 0.05;
 
             @include mq($lg) {
-                display: inline-block;
-                float: right;
                 margin: 0 $spacing-unit 0 0;
                 padding: 0 $spacing-unit 0 0;
                 vertical-align: baseline;

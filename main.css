@@ -159,25 +159,24 @@ body {
       body div.end > a {
         color: #979797;
         text-decoration: none; }
-  body > nav {
+  body .navbar {
     display: block;
     color: #cacaca;
-    background-color: #010101;
+    background-color: rgba(229, 229, 229, 0.75);
     font-family: "Helvetica Neue", sans-serif;
     font-size: 15.2px;
     line-height: 24.32px; }
-    body > nav > ul > li {
-      display: inline;
+    body .navbar ul > li {
       margin: 0;
       padding: 0 5px; }
-      body > nav > ul > li:first-child {
+      body .navbar ul > li:first-child {
         margin-left: 0; }
-      body > nav > ul > li:last-child {
+      body .navbar ul > li:last-child {
         margin-right: 0; }
   body > h1 {
     display: block;
     width: auto;
-    margin: 17.1px auto;
+    margin: 68.4px auto 17.1px;
     text-align: center;
     color: #979797;
     font-family: "Helvetica Neue", sans-serif;
@@ -188,8 +187,7 @@ body {
     @media screen and (min-width: 1200px) {
       body > h1 {
         display: block;
-        text-align: right;
-        margin: 17.1px 17.1px 0 0;
+        margin: 68.4px 17.1px 0 0;
         padding: 17.1px;
         vertical-align: baseline; } }
   body > p.lead {
@@ -206,8 +204,6 @@ body {
     letter-spacing: 0.95px; }
     @media screen and (min-width: 1200px) {
       body > p.lead {
-        display: inline-block;
-        float: right;
         margin: 0 17.1px 0 0;
         padding: 0 17.1px 0 0;
         vertical-align: baseline;
@@ -308,3 +304,5 @@ body {
     background-color: #f1f1f1; }
     body > footer img {
       margin: 0 auto; }
+
+/*# sourceMappingURL=main.css.map */
